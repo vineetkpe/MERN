@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+   let customerName = "Vardamaan";
+   let item         = "Kurkure";
+   let price        = 20;
+   let quantity     = 5;
+
+   let totalPrice = price * quantity;
+
+   console.log("Total Price:", totalPrice);
+
+   if (totalPrice >= 100) {
+       console.log("Congratulations! You Got FREE Delivery");
+   } else {
+       console.log("Delivery charges 50 Rs applied");
+   }
+
+   console.log("Customer Name (Uppercase):", customerName.toUpperCase());
+   console.log("Item Name Length:", item.length);
+
+   let placeOrder = (quantity >= 1);   // condition result boolean ban gaya
+   console.log("Order Placed:", placeOrder);  // 👈 ab print bhi karna hai
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Trading Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Trading Bot</h2>
+
+  <p>Balance: ₹<span id="balance">1000</span></p>
+  <p>Stock Price: ₹<span id="price">100</span></p>
+
+  <p>Holding: <span id="holding">0</span> stock(s)</p>
+  <button onclick="buy()">Buy</button>
+  <button onclick="sell()">Sell</button>
+
+  <script>
+    let balance = 1000;
+    let price = 100;
+    let holding = 0;
+    let buyPrice = 0;
+
+    function update() 
+    {
+      document.getElementById("balance").innerText = balance.toFixed();
+      document.getElementById("price").innerText = price.toFixed();
+      document.getElementById("holding").innerText = holding;
+    }
+
+    function buy() 
+    {
+      if (balance >= price) {
+        balance -= price;
+        holding++;
+        buyPrice = price;
+        update();
+      }
+    }
+
+    function sell() 
+    {
+      if (holding > 0) {
+        balance += price;
+        holding--;
+        update();
+      }
+    }
+
+    setInterval(() => 
+    {
+      price += (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 5);
+      if (price < 1) price = 1;
+      update();
+    }, 1000);
+
+    update();
+  </script>
+</body>
+</html>

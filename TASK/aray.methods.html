@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lorem, ipsum dolor.</title>
+</head>
+<body>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+
+  <script>
+    let students = ["Rahul", "Priya", "Aman", "Rahul", "Neha"];
+    let marks = [25, 35, 45, 60, 75];
+
+
+
+    document.write(students);
+
+    
+    console.log(" Index Of", students.indexOf("Rahul"));
+
+
+    console.log(" lastindex Of", students.lastIndexOf("Rahul"));
+
+   
+    console.log(" Includes ", students.includes("Neha"));
+
+    
+    console.log("find ", marks.find(m => m > 40));
+
+
+    console.log("findindex", marks.findIndex(m => m > 40));
+
+  
+    console.log("findlast ", marks.findLast(m => m > 50));
+
+
+    console.log("find last index", marks.findLastIndex(m => m > 40));
+  </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color:#e5e7eb ;
+    background-color: #0a0f1f;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* --------------------------------NAVBAR CSS---------------------------------------- */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #111827;
+    color: #00f5d4;
+    list-style:none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar img{
+    height: 200px;
+    padding-left:70px;
+    margin-top: 20px;
+}
+
+
+.list-right{
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-right: 70px;
+    
+
+}
+
+.list-right a{
+    color: #00f5d4;
+    text-decoration: none;
+}
+
+.list-right a:hover {
+    color: #ff0a54;   
+}
+
+
+
+/* -----------------------------------------NAVBAR CSS END HERE------------------------------------------- */
+
+
+/* ------------------------------------------FIRST BLOCK CSS START --------------------------------------------- */
+
+.firstblock {
+  background-color: #0a0f1f;   /* dark base */
+  height: 625px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;  /* spacing */
+}
+
+.left-side {
+  width: 50%;
+  color: #e5e7eb;
+}
+
+.left-side h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-side .accent {
+  color: #ff0a54;  /* neon pink highlight */
+}
+
+.left-side p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #00f5d4; /* teal text */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00f5d4;
+  color: #0a0f1f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ff0a54;
+  color: #fff;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side img {
+  max-height: 500px;
+  width: auto;
+}
+
+
+/* <------------------------- First block Css End here --------------------------------> */
+
+.secondblock {
+  background-color: #111827;   /* dark section */
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+  height: 625px;  /* fixed height like first block */
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-right {
+  flex: 1;
+  overflow-y: auto; /* in case text overflows */
+}
+
+.about-right h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00f5d4; /* teal heading */
+}
+
+.about-right p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.accent {
+  color: #ff0a54; /* neon pink highlight */
+}
+
+
+/* <-------------------------------------------Second block css end here ---------------------------------> */

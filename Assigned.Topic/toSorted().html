@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toSorted</title>
+</head>
+<body>
+  <h2>Javascript toSorted()</h2>
+  <p id="original"></p>
+  <p id="sorted"></p>
+
+  <script>
+    let nums = [3, 1, 2];
+    let sorted = nums.toSorted();
+
+    document.getElementById("original").textContent = "Original: " + nums;
+    document.getElementById("sorted").textContent = "Sorted: " + sorted;
+
+    console.log(sorted);  // [1 , 2 ,3]
+    console.log(nums);    // [3 , 1 , 2]
+    
+  </script>
+  <!-- toSorted return new array { original array remain as it is}-->
+</body>
+</html>

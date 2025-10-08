@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, reprehenderit?</p>
+    <script>
+    // 1️⃣ Student data
+    let students = [
+        { name: "Varun", age: 24, marks: 83 },
+        { name: "Riya", age: 22, marks: 95 },
+        { name: "Amit", age: 23, marks: 58 },
+        { name: "Neha", age: 21, marks: 76 }
+    ];
+
+    // 2️⃣ Array to store student names
+    let studentNames = [];
+
+    // 3️⃣ Loop through each student
+    for (let i = 0; i < students.length; i++) {
+        let student = students[i];
+
+        // Add name to array
+        studentNames.push(student.name);
+
+        // Format name
+        let formattedName = student.name.toUpperCase();
+
+        // Determine grade
+        if (student.marks >= 90) {
+            console.log(formattedName + " - Excellent");
+        } else if (student.marks >= 60 && student.marks < 90) {
+            console.log(formattedName + " - Good");
+        } else {
+            console.log(formattedName + " - Needs Improvement");
+        }
+    }
+
+    // 4️⃣ Print all student names
+    console.log("All Students:", studentNames);
+
+</script>
+
+</body>
+</html>
