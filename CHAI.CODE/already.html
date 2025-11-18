@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Trick</title>
+</head>
+<body>
+  <div id="box" style="font-size:20px; padding:20px; border:1px solid #000; width:300px;">
+    Click "Next" to start the magic trick!
+  </div>
+  <button onclick="nextStep()">Next</button>
+
+  <script>
+    let steps = [
+      "Pick a number between 1 and 99.",
+      "Multiply your number by 2.",
+      "Add 4 to the result.",
+      "Divide it by 2.",
+      "Now subtract your original number.",
+      "Your answer is 2 😎"
+    ];
+    let index = 0;
+
+    function nextStep() {
+      if (index < steps.length) {
+        document.getElementById("box").innerText = steps[index];
+        index++;
+      }
+    }
+  </script>
+</body>
+</html>
